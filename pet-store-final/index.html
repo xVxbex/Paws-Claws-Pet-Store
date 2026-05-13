@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Paws & Claws Pet Store</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<header>
+
+    <div class="header-container">
+
+        <h1 class="logo" onclick="showSection('home')">
+            Paws & Claws Pet Store
+        </h1>
+
+        <nav>
+
+            <a href="#" onclick="showSection('home')">Home</a>
+
+            <a href="#" onclick="showSection('pets')">Pets</a>
+
+            <a href="#" onclick="showSection('services')">Services</a>
+
+            <a href="#" onclick="showSection('about')">About</a>
+
+            <a href="#" onclick="showSection('contact')">Contact</a>
+
+        </nav>
+
+    </div>
+
+</header>
+
+<main class="container">
+
+<section class="hero page-section" id="home">
+
+    <div class="hero-text">
+
+        <h2>Welcome To Paws & Claws Pet Store</h2>
+
+        <p>
+            At Paws & Claws Pet Store, we believe every pet deserves
+            a loving home and exceptional care. Our local, family operated store in Boston offers healthy
+            pets, trusted supplies, professional grooming services, and
+            a welcoming environment for animal lovers of all ages. 
+        </p>
+
+        <button onclick="showSection('pets')">
+            Browse Our Pets
+        </button>
+
+    </div>
+
+</section>
+
+<section class="page-section" id="pets">
+
+    <h2 class="section-title">Featured Pets</h2>
+
+    <div class="flex-container">
+
+        <article class="card">
+
+            <img src="images/dog.jpg" alt="Bailey and Cooper the Golden Retrievers">
+
+            <div class="card-content">
+
+                <h3>Bailey & Cooper</h3>
+
+                <p>
+                    Bailey and Cooper are energetic Golden Retrievers
+                    who love playing outside, going on walks, and spending
+                    time with families.
+                </p>
+
+                <button onclick="toggleInfo('dog-info')">
+                    About Bailey & Cooper
+                </button>
+
+                <div id="dog-info" class="breed-info">
+
+                    <p>
+                        Bailey and Cooper are three-month-old brothers who
+                        enjoy swimming, playing fetch, and meeting new people.
+                        Their affectionate personalities make them excellent
+                        family companions.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </article>
+
+        <article class="card">
+
+            <img src="images/cat.jpg" alt="Luna the Persian Cat">
+
+            <div class="card-content">
+
+                <h3>Luna</h3>
+
+                <p>
+                    Luna is a calm Persian Cat who enjoys relaxing in
+                    sunny spots and spending quiet time with her owners.
+                </p>
+
+                <button onclick="toggleInfo('cat-info')">
+                    About Luna
+                </button>
+
+                <div id="cat-info" class="breed-info">
+
+                    <p>
+                        Luna is two-months-old and has a beautiful long coat
+                        that requires regular grooming. She enjoys peaceful
+                        environments and gets along well with indoor pets.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </article>
+
+        <article class="card">
+
+            <img src="images/fish.jpg" alt="Neon the Tropical Fish">
+
+            <div class="card-content">
+
+                <h3>Neon</h3>
+
+                <p>
+                    Neon is a colorful tropical fish that brings movement
+                    and bright colors to any aquarium setup.
+                </p>
+
+                <button onclick="toggleInfo('fish-info')">
+                    About Neon
+                </button>
+
+                <div id="fish-info" class="breed-info">
+
+                    <p>
+                        Neon thrives in freshwater aquariums with clean
+                        water and proper lighting. He is easy to care for
+                        and great for beginner fish owners.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </article>
+
+    </div>
+
+</section>
+
+<section class="page-section" id="services">
+
+    <h2 class="section-title">Our Services</h2>
+
+    <div class="flex-container">
+
+        <article class="card">
+
+            <img src="images/grooming.jpg" alt="Pet Grooming">
+
+            <div class="card-content">
+
+                <h3>Professional Grooming</h3>
+
+                <p>
+                    Our experienced grooming staff provides bathing,
+                    nail trimming, brushing, and coat maintenance services
+                    for dogs and cats of all breeds and sizes.
+                </p>
+
+            </div>
+
+        </article>
+
+        <article class="card">
+
+            <img src="images/store.jpg" alt="Pet Supplies">
+
+            <div class="card-content">
+
+                <h3>Pet Supplies</h3>
+
+                <p>
+                    We carry a large variety of premium pet foods,
+                    toys, leashes, aquariums, bedding, treats, and
+                    everyday supplies to help keep your pets healthy
+                    and happy.
+                </p>
+
+            </div>
+
+        </article>
+
+    </div>
+
+    <div class="video-section">
+
+        <h2 class="section-title">Take A Look Inside Our Store</h2>
+
+        <video controls>
+
+            <source src="media/pet-video.mp4" type="video/mp4">
+
+        </video>
+
+    </div>
+
+</section>
+
+<section class="page-section" id="about">
+
+    <h2 class="section-title">About Our Store</h2>
+
+    <div class="about">
+
+        <img src="images/store.jpg" alt="Pet Store">
+
+        <div>
+
+            <p>
+                Paws & Claws Pet Store was founded with the goal of
+                creating a welcoming environment where pet owners can
+                find trusted products, healthy pets, and reliable care.
+            </p>
+
+            <br>
+
+            <p>
+                Our staff is passionate about animals and committed
+                to helping customers find the perfect pet and supplies
+                for their lifestyle.
+            </p>
+
+            <br>
+
+            <p>
+                We proudly serve families throughout the Boston area
+                and strive to provide excellent customer service every day.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="page-section" id="contact">
+
+    <h2 class="section-title">Contact Us</h2>
+
+    <div class="contact-info">
+
+        <p><strong>Address:</strong> 123 Main Street, Boston, MA 02118</p>
+
+        <p><strong>Phone:</strong> (617) 555-2487</p>
+
+        <p><strong>Email:</strong> info@pawsandclaws.com</p>
+
+        <p><strong>Store Hours:</strong> Monday - Saturday: 9AM - 7PM</p>
+
+    </div>
+
+    <h3>Helpful Pet Care Links</h3>
+
+    <ul class="resource-links">
+
+        <li>
+            <a href="https://www.aspca.org/pet-care" target="_blank">
+                ASPCA Pet Care Tips
+            </a>
+        </li>
+
+        <li>
+            <a href="https://www.petmd.com/dog/care" target="_blank">
+                Dog Care Information
+            </a>
+        </li>
+
+        <li>
+            <a href="https://www.chewy.com/b/leashes-2265" target="_blank">
+                Popular Dog Leashes
+            </a>
+        </li>
+
+        <li>
+            <a href="https://www.chewy.com/b/dog-toys-315" target="_blank">
+                Recommended Dog Toys
+            </a>
+        </li>
+
+    </ul>
+
+    <form>
+
+        <label for="name">Full Name</label>
+
+        <input type="text" id="name" required>
+
+        <label for="email">Email Address</label>
+
+        <input type="email" id="email" required>
+
+        <label for="phone">Phone Number</label>
+
+        <input type="tel" id="phone" required>
+
+        <label for="message">Questions or Comments</label>
+
+        <textarea id="message" rows="6" required></textarea>
+
+        <button type="submit">
+            Send Message
+        </button>
+
+    </form>
+
+</section>
+
+</main>
+
+<footer>
+
+    <p>
+        &copy; 2026 Paws & Claws Pet Store | Created by Alex Kuran
+    </p>
+
+</footer>
+
+<script>
+
+function showSection(sectionId){
+
+    let sections = document.querySelectorAll('.page-section');
+
+    sections.forEach(function(section){
+        section.style.display = 'none';
+    });
+
+    let activeSection = document.getElementById(sectionId);
+
+    if(sectionId === 'home'){
+        activeSection.style.display = 'flex';
+    }
+    else{
+        activeSection.style.display = 'block';
+    }
+}
+
+function toggleInfo(infoId){
+
+    let allInfo = document.querySelectorAll('.breed-info');
+
+    allInfo.forEach(function(info){
+
+        if(info.id !== infoId){
+            info.style.display = 'none';
+        }
+
+    });
+
+    let selectedInfo = document.getElementById(infoId);
+
+    if(selectedInfo.style.display === 'block'){
+        selectedInfo.style.display = 'none';
+    }
+    else{
+        selectedInfo.style.display = 'block';
+    }
+}
+
+showSection('home');
+
+</script>
+
+</body>
+
+</html>
